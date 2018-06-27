@@ -1,0 +1,21 @@
+.big {
+    font-size: 64px !important;
+}
+
+.mainblock {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.avatar {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+}
+.bold {
+    font-weight: 600;
+}

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Сайт KingEntainment'a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>KingEntainment</title>
+    <!-- Линки -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="material/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <!-- Заголовок -->
+        <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+                <h3>KingEntainment</h3>
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="#overview" class="mdl-layout__tab is-active">Информация</a>
+                <a href="#features" class="mdl-layout__tab">Прочее</a>
+                <a href="#learn" class="mdl-layout__tab">Обучение JS</a>
+                <a href="#" class="mdl-layout__tab">Скоро...</a>
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add" onclick="buttonClick()">
+            <i class="material-icons" role="presentation">add</i>
+            <span class="visuallyhidden">Add</span>
+          </button>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+
+            <!-- Первая вкладка -->
+            <div class="mdl-layout__tab-panel is-active" id="overview">
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <header style="background-image:url(images/discord.png)" class="mainblock section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-500 mdl-color-text--white">
+                    </header>
+                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Discord</h4> Наше место, в котором мы постянно общаемся и занимаемся другими делами, играем вместе и прочее - Discord.
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a href="https://discord.gg/rDBfhM9" class="mdl-button mdl-js-button mdl-js-ripple-effect">Зайти на сервер</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <header style="background-image: url(images/GoogleClassroom.png)" class="mainblock section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-500 mdl-color-text--white">
+                    </header>
+                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="mdl-card__supporting-text">
+                            <h4>KingEntainment Education</h4> Начали изучать JavaScript, HTML/CSS, NodeJS вместе с участниками ниже.
+                            <br> Код курса: <span class="bold">il7eel</span>.
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a href="https://learn.javascript.ru/" class="mdl-button mdl-js-button mdl-js-ripple-effect">Учебник</a>
+                            <a href="https://classroom.google.com/" class="mdl-button mdl-js-button mdl-js-ripple-effect">Класс</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <header style="background-image: url(images/hots.png)" class="mainblock section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-500 mdl-color-text--white">
+                    </header>
+                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Heroes of the Storm</h4> Мы играем в одну игру на нашем сервере - Heroes of the Storm. Жанр: MOBA. Разработали ее Blizzard Entertainment. Если хотите поиграть вместе, добро пожаловать к нам на сервер в дискорде!
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a href="https://heroesofthestorm.com/ru-ru/" class="mdl-button mdl-js-button mdl-js-ripple-effect">Игра</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <header style="background-image: url(images/terraria.png)" class="mainblock section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-500 mdl-color-text--white">
+                    </header>
+                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Terraria</h4> Terraria - унылое говно, в которое мы переодически по 10 часов подряд играем без остановок. Некоторые люди считают, что террария лучше старбаунда. Давайте мы проверим это и поиграем в эти две прекрасные игры вместе на нашем
+                            серевере.
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a href="files/terraria.torrent" class="mdl-button mdl-js-button mdl-js-ripple-effect">Игра</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <header style="background-image: url(images/starbound.png)" class="mainblock section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--indigo-500 mdl-color-text--white">
+                    </header>
+                    <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Starbound</h4> Starbound - не УГ, интересней, чем Terraria. Зато там можно выращивать персики.
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a href="files/starboundTorrent.torrent" class="mdl-button mdl-js-button mdl-js-ripple-effect">Игра</a>
+                            <a href="files/starboundM.rar" class="mdl-button mdl-js-button mdl-js-ripple-effect">Сборка модов</a>
+                            <a href="files/Russian.pak" class="mdl-button mdl-js-button mdl-js-ripple-effect">Мод-русификатор</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                            <h4 class="mdl-cell mdl-cell--12-col">Главные участники</h4>
+                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <div style="background-image: url(images/kingopl.png)" class="avatar section__circle-container__circle mdl-color--primary"></div>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h5>KingOPl</h5> Создатель, король KingEntainment'а, по всем вопросам к этому человеку.
+                            </div>
+                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <div style="background-image: url(images/sadys.jpg)" class="avatar section__circle-container__circle mdl-color--primary"></div>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h5>Sadys</h5> Этому интернету нужен новый <a href="http://sadys.ga/">отстой</a>.
+                            </div>
+                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <div style="background-image: url(https://cdn.discordapp.com/attachments/455085322053746698/455094507378180098/Tashetti.png)" class="avatar section__circle-container__circle mdl-color--primary"></div>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h5>Tashetti</h5> Серверный тушканчик, может играть в хотс и террарию, и в майнкрафт. Лучший Гэндзи Европы! Не умеет играть на Ане.
+                            </div>
+                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <div style="background-image: url(https://pbs.twimg.com/profile_images/948699304692211717/aJehVNvY_400x400.jpg)" class="avatar section__circle-container__circle mdl-color--primary"></div>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h5>SeyVetch</h5> Слесарь. <a href="https://twitter.com/SeyVetch">Twitter</a>, <a href="https://www.tumblr.com/blog/seyvetch">Tumblr</a>.
+                            </div>
+                            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                                <div style="background-image: url(https://cdn.discordapp.com/avatars/342584215231135745/7ebd373696977d3e3ee9d5681387700f.jpg)" class="avatar section__circle-container__circle mdl-color--primary"></div>
+                            </div>
+                            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                                <h5>DenDemon</h5> Просто Бох.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Скоро</h4> Этот блок будет использован для другой цели
+                            <p id="output"></p>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <a onclick="stopClick()" href="#" class="mdl-button">Не жми на меня</a>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Вторая вкладка -->
+            <div class="mdl-layout__tab-panel" id="features">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <h4>Тут будет текст</h4> Ниже будет содержание текста.
+                        <ul class="toc">
+                            <h4>Содержание</h4>
+                            <a href="#part1">Первая какая-то часть</a>
+                        </ul>
+                        <h5 id="part1">Будущий текст</h5> Да-да, я не повторяюсь совсем.
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Третья вкладка -->
+            <div class="mdl-color--grey-100 mdl-layout__tab-panel" id="learn">
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <h4>KingOPl</h4>
+                            <span style="font-size: 100px; color:red;">Читер</span>
+                        </div>
+                        <div>
+                            <!-- Кнопки -->
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Sadys</h4>
+
+                        </div>
+                        <div>
+                            <!-- Кнопки -->
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <h4>SeyVetch</h4>
+                        </div>
+                        <div>
+                            <!-- Кнопки -->
+                        </div>
+                    </div>
+                </section>
+                <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                    <div class="mdl-card mdl-cell mdl-cell--12-col">
+                        <div class="mdl-card__supporting-text">
+                            <h4>Скоро</h4>
+
+                        </div>
+                        <div>
+                            <!-- Кнопки -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="mdl-mega-footer">
+                <div class="mdl-mega-footer--middle-section">
+                    <div class="mdl-mega-footer--drop-down-section">
+                        <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked title="links">
+                        <h1 class="mdl-mega-footer--heading">Ссылки</h1>
+                        <ul class="mdl-mega-footer--link-list">
+                            <li><a href="#">Будущие ссылки</a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mega-footer--drop-down-section">
+                        <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked title="download">
+                        <h1 class="mdl-mega-footer--heading">Скачать</h1>
+                        <ul class="mdl-mega-footer--link-list">
+                            <li><a href="https://discordapp.com">Discord</a></li>
+                            <li><a href="https://heroesofthestorm.com/ru-ru">Heroes of the Storm</a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mega-footer--drop-down-section">
+                        <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked title="coming">
+                        <h1 class="mdl-mega-footer--heading">Скоро...</h1>
+                        <ul class="mdl-mega-footer--link-list">
+                            <li><a href="#"><b>Тут что-то будет</b></a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mega-footer--drop-down-section">
+                        <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked title="questions">
+                        <h1 class="mdl-mega-footer--heading">Вопросы</h1>
+                        <ul class="mdl-mega-footer--link-list">
+                            <li><a href="mailto:kingopl@mail.ru?subject=Question">Задать вопрос по почте</a></li>
+                            <li><a href="#">ЧаВо отсутсвуют</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mdl-mega-footer--bottom-section">
+                    <div class="mdl-logo">
+                        Больше информации
+                    </div>
+                    <ul class="mdl-mega-footer--link-list">
+                        <li><a href="https://design.google">Google Material Design</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="material/material.min.js"></script>
+    <script src="script.js" async></script>
+</body>
+
+</html>
